@@ -1,0 +1,15 @@
+.home_wrap {
+  padding: 120px;
+  .cards_wrap_outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .home_wrap {
+    padding: 20px;
+    padding-top: 80px;
+  }
+}

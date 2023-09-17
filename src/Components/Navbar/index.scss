@@ -1,0 +1,38 @@
+.navbar {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  .nav_wrap {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filter_wrap {
+    button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      margin-right: 12px;
+    }
+  }
+  .hamburger_menu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .filter_wrap {
+    display: none;
+  }
+  .hamburger_menu {
+    display: flex !important;
+  }
+  .navbar {
+    width: 100%;
+  }
+}

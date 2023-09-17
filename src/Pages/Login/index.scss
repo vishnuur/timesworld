@@ -1,0 +1,122 @@
+.login_wrap {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  .signin_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    .signin {
+      padding: 140px;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      h1 {
+        font-weight: 700;
+        font-size: 32px;
+      }
+      .newuser {
+        font-weight: 700;
+        font-size: 16px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .signin_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input {
+          width: 280px;
+          height: 48px;
+          margin-top: 12px;
+          padding: 12px;
+          box-sizing: border-box;
+        }
+      }
+      .signin_remember {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .submitbtn {
+        width: 280px;
+        height: 48px;
+        background-color: #3c3c3c;
+        color: white;
+        border: none;
+        padding: 12px;
+        box-sizing: border-box;
+      }
+    }
+    .signinwith_wrap {
+      display: flex;
+      justify-content: space-between;
+      width: 280px;
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    .text-container-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .text-container {
+        text-align: center;
+        position: relative;
+        h5 {
+          font-weight: 500;
+        }
+        .line-before,
+        .line-after {
+          position: absolute;
+          content: '';
+          width: 70%;
+          border-top: 1px solid #000; /* Line properties */
+          top: 50%; /* Position the lines in the middle of the container */
+        }
+
+        .line-before {
+          left: -40px;
+          transform: translateX(-50%); /* Move the line before to the left */
+        }
+
+        .line-after {
+          right: -40px;
+          transform: translateX(50%); /* Move the line after to the right */
+        }
+      }
+    }
+  }
+  .signin_image {
+    width: 50%;
+    img {
+      position: absolute;
+      width: 300.49px;
+      height: 509.74px;
+      top: 80.26px;
+      left: 70%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .signin_image {
+    display: none;
+  }
+  .login_wrap {
+    height: 100vh;
+  }
+}
