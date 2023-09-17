@@ -14,7 +14,7 @@ const Index = () => {
   );
   useEffect(() => {
     dispatch(fetchHomeData(null));
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
