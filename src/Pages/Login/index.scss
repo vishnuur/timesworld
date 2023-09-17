@@ -48,6 +48,8 @@
         }
         p {
           font-size: 14px;
+          margin-left: 12px;
+          font-weight: 600;
         }
       }
       .submitbtn {
@@ -118,5 +120,11 @@
   }
   .login_wrap {
     height: 100vh;
+    .signin_wrap {
+      .signin {
+        width: unset;
+        padding: 0;
+      }
+    }
   }
 }
